@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>486D35F7-C25C-4F54-BE78-0101CDD96D32</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MyPodExample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9CB281C0-7A25-4061-8AE5-29DA28734E4E</key>
+		<string>ssh://github.com/pomozoff/MyCustomPod.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Project/MyPodExample/MyPodExample.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9CB281C0-7A25-4061-8AE5-29DA28734E4E</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/pomozoff/MyCustomPod.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9CB281C0-7A25-4061-8AE5-29DA28734E4E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9CB281C0-7A25-4061-8AE5-29DA28734E4E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MyPodExample</string>
+		</dict>
+	</array>
+</dict>
+</plist>
