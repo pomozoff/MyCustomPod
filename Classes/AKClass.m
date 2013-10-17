@@ -22,6 +22,12 @@
 - (void)modifyStoredData:(NSDictionary *)newData {
     
 }
+- (void)connectToProvider:(NSProvider *)provider completionBlock:(void(^)(NSError *))completion {
+    
+}
+- (void)fetchSetOfObjectsFromServer:(NSString *)stringUrl completionBlock:(void(^)(NSArray *, NSError *))completion {
+    
+}
 
 @end
 

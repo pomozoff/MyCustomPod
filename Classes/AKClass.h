@@ -22,11 +22,17 @@
 
 @end
 
+@interface NSProvider : NSObject
+
+@end
+
 @interface AKClass : NSObject
 
 - (void)connectToURL:(NSURL *)url completionBlock:(void(^)(NSError *))completion;
 - (void)parseJson:(NSDictionary *)jsonData completionBlock:(void(^)(NSArray *))completion;
 - (void)restoreAccessTokenCompletionBlock:(void(^)(AKAccessToken *))completion;
 - (void)modifyStoredData:(NSDictionary *)newData;
+- (void)connectToProvider:(NSProvider *)provider completionBlock:(void(^)(NSError *))completion;
+- (void)fetchSetOfObjectsFromServer:(NSString *)stringUrl completionBlock:(void(^)(NSArray *, NSError *))completion;
 
 @end
