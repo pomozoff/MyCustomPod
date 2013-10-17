@@ -7,34 +7,32 @@
 //
 
 #import "AKClass.h"
+#import "AKConnection.h"
+
+@interface AKClass ()
+
+@property (nonatomic, strong) AKProvider *provider;
+@property (nonatomic, strong) AKConnection *connection;
+@property (nonatomic, assign) BOOL isConnected;
+
+@end
 
 @implementation AKClass
 
-- (void)connectToURL:(NSURL *)url completionBlock:(void(^)(NSError *))completion {
-    
-}
-- (void)parseJson:(NSDictionary *)jsonData completionBlock:(void(^)(NSArray *))completion {
-    
-}
-- (void)restoreAccessTokenCompletionBlock:(void(^)(AKAccessToken *))completion {
-    
-}
-- (void)modifyStoredData:(NSDictionary *)newData {
-    
-}
-- (void)connectToProvider:(NSProvider *)provider completionBlock:(void(^)(NSError *))completion {
-    
+- (void)connectToProvider:(AKProvider *)provider completionBlock:(void(^)(NSError *))completion {
+    [self.connection connectToURL:provider.url completionBlock:completion];
 }
 - (void)fetchSetOfObjectsFromServer:(NSString *)stringUrl completionBlock:(void(^)(NSArray *, NSError *))completion {
-    
+    if (self.isConnected) {
+        NSArray *array = @[@"one", @"two"];
+        completion(array, nil);
+    } else {
+        [self connectToProvider:self.provider completionBlock:^(NSError *error){
+            if (!error) {
+                self.isConnected = YES;
+            }
+        }];
+    }
 }
-
-@end
-
-@implementation AKAccessToken
-
-@end
-
-@implementation AKStorage
 
 @end
