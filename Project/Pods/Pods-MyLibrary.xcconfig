@@ -1,0 +1,1 @@
+PODS_MYLIBRARY_OTHER_LDFLAGS = -framework Foundation

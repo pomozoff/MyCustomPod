@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>486D35F7-C25C-4F54-BE78-0101CDD96D32</string>
+	<string>4B17C1E7-43BA-4D26-AA94-9BE137C5BD3A</string>
 	<key>IDESourceControlProjectName</key>
 	<string>MyPodExample</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -14,11 +14,11 @@
 		<string>ssh://github.com/pomozoff/MyCustomPod.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Project/MyPodExample/MyPodExample.xcodeproj/project.xcworkspace</string>
+	<string>Project/MyPodExample.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>9CB281C0-7A25-4061-8AE5-29DA28734E4E</key>
-		<string>../../../..</string>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>ssh://github.com/pomozoff/MyCustomPod.git</string>
