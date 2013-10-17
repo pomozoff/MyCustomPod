@@ -1,0 +1,2 @@
+platform :ios, "7.0"
+pod 'MyLibrary', :path => '~/Documents/PodSample/MyLibrary.podspec'
