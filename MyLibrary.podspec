@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name            = "MyLibrary"
-  s.version         = "0.0.2"
+  s.version         = "0.0.3"
   s.summary         = "Example of creating own pod."
   s.homepage        = "https://github.com/pomozoff/MyCustomPod"
   s.license         = { :type => 'MIT', :file => 'LICENSE' }
@@ -12,8 +12,8 @@ Pod::Spec.new do |s|
   s.default_subspec = 'Core' # Модуль по умолчанию называется Core
 
   s.subspec 'Core' do |core|
-    core.source_files          = 'Classes/AKClass.{h,m}'
-    core.public_header_files   = 'Classes/*.h'
+    core.source_files        = 'Classes/AKClass.{h,m}'
+    core.public_header_files = 'Classes/*.h'
     core.dependency 'MyLibrary/Connection'
     core.dependency 'MyLibrary/Provider'
   end
@@ -43,5 +43,6 @@ Pod::Spec.new do |s|
     connection.source_files = 'Classes/AKConnection.{h,m}'
     connection.dependency 'MyLibrary/Storage'
     connection.dependency 'MyLibrary/Parser'
+    connection.dependency 'AFNetworking' # Добавлена зависимость от внешнего "pod"'а
   end
 end
