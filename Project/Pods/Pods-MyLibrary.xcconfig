@@ -1,1 +1,2 @@
-PODS_MYLIBRARY_OTHER_LDFLAGS = -framework Foundation
+PODS_MYLIBRARY_HEADER_SEARCH_PATHS = $(SDKROOT)/usr/include/libxml2
+PODS_MYLIBRARY_OTHER_LDFLAGS = -lxml2 -framework CoreData -framework Foundation -framework MapKit

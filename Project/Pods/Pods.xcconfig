@@ -1,4 +1,4 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/MyLibrary"
-OTHER_LDFLAGS = -ObjC -framework Foundation
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/MyLibrary" $(SDKROOT)/usr/include/libxml2
+OTHER_LDFLAGS = -ObjC -lxml2 -framework CoreData -framework Foundation -framework MapKit
 PODS_ROOT = ${SRCROOT}/Pods

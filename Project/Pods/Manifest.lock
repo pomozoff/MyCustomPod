@@ -1,14 +1,22 @@
 PODS:
-  - MyLibrary (0.0.1)
+  - MyLibrary/AccessToken (0.0.2)
+  - MyLibrary/Connection (0.0.2):
+    - MyLibrary/Parser
+    - MyLibrary/Storage
+  - MyLibrary/Parser (0.0.2)
+  - MyLibrary/Provider (0.0.2)
+  - MyLibrary/Storage (0.0.2):
+    - MyLibrary/AccessToken
 
 DEPENDENCIES:
-  - MyLibrary (from `~/Documents/PodSample/MyLibrary.podspec`)
+  - MyLibrary/Connection (from `..`)
+  - MyLibrary/Provider (from `..`)
 
 EXTERNAL SOURCES:
   MyLibrary:
-    :path: ~/Documents/PodSample/MyLibrary.podspec
+    :path: ..
 
 SPEC CHECKSUMS:
-  MyLibrary: dbd97b0d129b118d0e43b57ac09043b193dc3f93
+  MyLibrary: e5a6ffad8dc3a35cb4e24602e98579dc49a27748
 
 COCOAPODS: 0.26.2
